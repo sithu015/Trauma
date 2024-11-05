@@ -5,7 +5,7 @@
 🇬🇧[Englisch](README.md)  
 🇩🇪[Deutschland](README.de.md)
 
-Dies ist ein Skript, das auf der Cloudflare Worker-Plattform basiert. Basierend auf der Originalversion wurde es so geändert, dass es Trojaner-Konfigurationsinformationen anzeigt und diese in Abonnementinhalte umwandelt. Mit diesem Skript können Sie mithilfe der Online-Konfiguration problemlos Trojaner-Konfigurationsinformationen in Tools wie Clash oder Singbox konvertieren.
+Dies ist ein Skript, das auf der Cloudflare Worker-Plattform basiert. Basierend auf der Originalversion wurde es so modifiziert, dass es Trojaner-Konfigurationsinformationen anzeigt und diese in Abonnementinhalte umwandelt. Mit diesem Skript können Sie mithilfe der Online-Konfiguration problemlos Trojaner-Konfigurationsinformationen in Tools wie Clash oder Singbox konvertieren.
 
 [TG-Kanal](https://t.me/F_NiREvil)
 
@@ -81,7 +81,7 @@ Dies ist ein Skript, das auf der Cloudflare Worker-Plattform basiert. Basierend 
 ## Bereitstellungsmethode für Seiten
 
 1.  Stellen Sie Cloudflare-Seiten bereit:
-    -   Fork [dieses Projekt auf Github](https://github.com/NiREvil/Trauma/fork)
+    -   Gabel[dieses Projekt auf Github](https://github.com/NiREvil/Trauma/fork)
     -   Wählen Sie in der Cloudflare Pages-Konsole aus`Connected to Git`Danach wählen Sie aus`trauma`Klicken Sie hinter dem Element`Start setting up`。
     -   existieren`Setting up build and deployment`Wählen Sie unten auf der Seite aus`Environment variables (advanced)`später zusammenführen[Variablen hinzufügen](#Environment-variables-description),
     -   Geben Sie den Variablennamen ein**PASSWORT**, der Wert ist Ihr Passwort, dann klicken Sie`Save and deploy`Das ist es.
@@ -118,7 +118,7 @@ Dies ist ein Skript, das auf der Cloudflare Worker-Plattform basiert. Basierend 
 
 1.  Bei der Bereitstellung auf Cloudflare-Seiten können Sie ProxyIP in der 4. Zeile festlegen`_worker.js`Datei. Oder legen Sie die Umgebungsvariable fest. Der Variablenname lautet`PROXYIP`
 
-2.  When deploy in worker.dev, you can set proxyIP in 4th line of `_worker.js`Datei. Oder legen Sie die Umgebungsvariable fest. Der Variablenname lautet`proxyIP`
+2.  Bei der Bereitstellung in worker.dev können Sie ProxyIP in der 4. Zeile von festlegen`_worker.js`Datei. Oder legen Sie die Umgebungsvariable fest. Der Variablenname lautet`proxyIP`
 
 ### So finden Sie ProxyIP
 
@@ -160,6 +160,6 @@ Dies ist ein Skript, das auf der Cloudflare Worker-Plattform basiert. Basierend 
 
 # dankbar
 
-[ca110us](https://github.com/ca110us/epeius)\|[Sterilisieren Sie es](https://github.com/3Kmfi6HP/EDtunnel/tree/trojan)  \|  [zizifn](https://github.com/zizifn/edgetunnel)\|[Jemen 178](https://github.com/emn178/js-sha256)\|[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)\|[Shegs 1999](https://github.com/SHIJS1999/cloudflare-worker-vless-ip)
+[ca110us](https://github.com/ca110us/epeius)\|[Sterilisieren Sie es](https://github.com/3Kmfi6HP/EDtunnel/tree/trojan)\|[zizifn](https://github.com/zizifn/edgetunnel)\|[Jemen 178](https://github.com/emn178/js-sha256)\|[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)\|[Shegs 1999](https://github.com/SHIJS1999/cloudflare-worker-vless-ip)
 
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
