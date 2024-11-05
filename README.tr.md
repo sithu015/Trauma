@@ -1,8 +1,9 @@
 # Trojan'ı Sunucusuz CF Çalışanları ve Sayfaları kullanarak dağıtın
 
-🇮🇷[Farsça](README.fa.md)| 🇹🇷[Türkçe](README.tr.md)
-
-🇬🇧[İngilizce](README.md)|  🇩🇪[Almanya](README.de.md)
+🇮🇷[Farsça](README.fa.md)  
+🇹🇷[Türkçe](README.tr.md)  
+🇬🇧[İngilizce](README.md)  
+🇩🇪[Almanya](README.de.md)
 
 Bu, Cloudflare Worker platformunu temel alan bir komut dosyasıdır. Orijinal versiyona dayanarak, Truva atı yapılandırma bilgilerini görüntüleyecek ve bunu abonelik içeriğine dönüştürecek şekilde değiştirildi. Bu betiği kullanarak Truva atı yapılandırma bilgilerini çevrimiçi yapılandırmayı kullanarak Clash veya Singbox gibi araçlara kolayca dönüştürebilirsiniz.
 
@@ -43,7 +44,7 @@ Bu, Cloudflare Worker platformunu temel alan bir komut dosyasıdır. Orijinal ve
 
     -   Cloudflare Worker konsolunda yeni bir Worker oluşturun.
 
-    -   İrade[işçi.js](https://github.com/NiREvil/Trauma/blob/main/_worker.js)İçeriği Worker düzenleyicisine yapıştırın.
+    -   İrade[işçi.js](_worker.js)İçeriği Worker düzenleyicisine yapıştırın.
 
     -   3\. satırı değiştir`password`Kendinize göre değiştirin**şifre**
 
@@ -55,11 +56,12 @@ Bu, Cloudflare Worker platformunu temel alan bir komut dosyasıdır. Orijinal ve
     -   Vermek`addresses`Tercih edilen alan adını/tercih edilen temiz IP'yi formata göre ekleyin. Bağlantı noktası numarası yoksa varsayılan TLS bağlantı noktası 443'tür ve # işareti açıklama takma adıdır, örneğin:
         ```js
         let addresses = [
-        // Everything you want, Cloudflare Domains & Clean IP addresses.
-        'www.speedtest.net:443#Ni1',
-        'sky.rethinkdns.com#Ni2',
-        'creativecommons.org#Ni3',
-        'time.cloudflare.com:2053#Ni4',
+        // any Domain or clean IPv4/IPv6 addresses from cloudflare is usable, no sweat.
+        'cdnjs.com:443#N1',
+        'www.wto.org:2053#N2',
+        'sky.rethinkdns.com#N3',
+        'creativecommons.org#N4',
+        '[2606:4700:310c::ac42:2c39]#N5 √IPv6',
         ];
         ```
 
@@ -88,13 +90,13 @@ Bu, Cloudflare Worker platformunu temel alan bir komut dosyasıdır. Orijinal ve
     -   Değişken ekle`ADD`Yerel statik tercihli hat; bağlantı noktası numarası yoksa, varsayılan TLS bağlantı noktası 443'tür ve # numarasının ardından bir açıklama takma adı gelir, örneğin:
         ```js
         discord.com#You can just put the domain name as follows
-        www.speedtest.net:443#Ni1
-        speed.cloudflare.com#Ni2
-        zula.ir#Ni3
-        creativecommons.org:2053#Ni4
-        sky.rethinkdns.com#NI5
+        www.speedtest.net:443#N1
+        speed.cloudflare.com#N2
+        zula.ir#N3
+        creativecommons.org:2053#N4
+        sky.rethinkdns.com#N5
         104.17.152.41#IPv4 is available
-        [2606:4700:e7:25:4b9:f8f8:9bfb:774a]#also IPv6
+        [2606:4700:310c::ac42:2c39]#also IPv6
         ```
 
 3.  Abonelik içeriğine erişin:
@@ -120,21 +122,21 @@ Bu, Cloudflare Worker platformunu temel alan bir komut dosyasıdır. Orijinal ve
 
 ### ProxyIP nasıl bulunur?
 
-[(KAYNAK)](https://github.com/NiREvil/vless/edit/main/sub/ProxyIP.md)
+[Burada görelim](https://github.com/NiREvil/vless/edit/main/sub/ProxyIP.md)
 
 ## Ortam değişkenleri açıklaması
 
 > [!NOT]Bunlardan sadece ikisini ayarlamak yeterli, ilk değişken`PASSWORD`ve ikincisi`PROXYIP`, aşağıdaki tabloda listelenen değişkenler yalnızca eğitim amaçlıdır ve ek açıklamalar içindir.![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
 
-| değişken adı                                                                                       | Örnek                                                                                                     | Açıklama                                                                                                                                      |
-| -------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| ŞİFRE                                                                                              | oto                                                                                                       | Her değeri alabilir                                                                                                                           |
-| PROXYIP                                                                                            | [buraya tıklayın](https://github.com/NiREvil/vless/edit/main/sub/ProxyIP.md)veya Kullan`ni.radically.pro` | CFCDN sitelerine erişim için alternatif proxy düğümü (ProxyIP'ler arasında 1 veya 2 satır aralığı bulunan birden fazla ProxyIP'yi destekler)) |
-| EKLEMEK                                                                                            | [zula.ir,www.csgo.com:2087](http://zula.ir,www.csgo.com:2087)                                             | Yerel tercih edilen alan adı/tercih edilen IP (birden fazla öğeyi destekler)`,`veya aralık olarak satır besleme)                              |
-| EKLEMEK                                                                                            | <https://raw.githubusercontent.com/NiREvil/Trauma/main/cleanIPs.txt>                                      | Açıklamaya gerek yok herkes anlıyor                                                                                                           |
-| subapi                                                                                             | subapi.fxxk.dedyn.io                                                                                      | Clash, singbox vb. abonelik dönüşümü arka ucu                                                                                                 |
-| ALT AD                                                                                             | kötü                                                                                                      | Abonelik adı                                                                                                                                  |
-| ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256) | ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)        | ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)                                            |
+| değişken adı                                                                                       | Örnek                                                                                                                              | Açıklama                                                                                                                                      |
+| -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| ŞİFRE                                                                                              | oto                                                                                                                                | Her değeri alabilir                                                                                                                           |
+| PROXYIP                                                                                            | `bpb.radically.pro`veya İstediğiniz başka bir şeyi kullanın[buraya bak](https://github.com/NiREvil/vless/edit/main/sub/ProxyIP.md) | CFCDN sitelerine erişim için alternatif proxy düğümü (ProxyIP'ler arasında 1 veya 2 satır aralığı bulunan birden fazla ProxyIP'yi destekler)) |
+| EKLEMEK                                                                                            | [zula.ir,www.wto.org:2087](http://zula.ir,www.csgo.com:2087)                                                                       | Yerel tercih edilen alan adı/tercih edilen IP (birden fazla öğeyi destekler)`,`veya aralık olarak satır besleme)                              |
+| EKLEMEK                                                                                            | <https://raw.githubusercontent.com/NiREvil/Trauma/main/cleanIPs.txt>                                                               | Açıklamaya gerek yok herkes anlıyor                                                                                                           |
+| subapi                                                                                             | SUBAPI.fxxk.dedyn.io                                                                                                               | Clash, singbox vb. abonelik dönüşümü arka ucu                                                                                                 |
+| ALT AD                                                                                             | kötü                                                                                                                               | Abonelik adı                                                                                                                                  |
+| ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256) | ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)                                 | ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)                                            |
 
 * * *
 
