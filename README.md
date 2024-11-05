@@ -1,9 +1,10 @@
 # Deploy Trojan using a Serverless CF-Workers & Pages
 
 
-🇮🇷 [Persian](README.fa.md) | 🇹🇷 [Turkish](README.tr.md)  
-
-🇬🇧 [English](README.md) |  🇩🇪 [Germany](README.de.md)  
+🇮🇷 [Persian](README.fa.md)  
+🇹🇷 [Turkish](README.tr.md)  
+🇬🇧 [English](README.md)  
+🇩🇪 [Germany](README.de.md)  
 
 
 
@@ -48,7 +49,7 @@ This is a script based on the Cloudflare Worker platform. Based on the original 
 
 1.  Deploy Cloudflare Worker:
     - Create a new Worker in the Cloudflare Worker console.
-    - Will [worker.js](https://github.com/NiREvil/Trauma/blob/main/_worker.js) Paste the contents into the Worker editor.
+    - Will [worker.js](_worker.js) Paste the contents into the Worker editor.
     - Change line 3 `password` Modify it to your own **password**
   
     - Alternatively, you can click the button below to deploy directly.
@@ -59,11 +60,12 @@ This is a script based on the Cloudflare Worker platform. Based on the original 
     - Give `addresses` Add the preferred domain name/preferred clean IP according to the format. If there is no port number, the default TLS port is 443, and the # sign is the remark alias, for example:
         ```js
         let addresses = [
-        // Everything you want, Cloudflare Domains & Clean IP addresses.
-        'www.speedtest.net:443#Ni1',
-        'sky.rethinkdns.com#Ni2',
-        'creativecommons.org#Ni3',
-        'time.cloudflare.com:2053#Ni4',
+        // any Domain or clean IPv4/IPv6 addresses from cloudflare is usable, no sweat.
+        'cdnjs.com:443#N1',
+        'www.wto.org:2053#N2',
+        'sky.rethinkdns.com#N3',
+        'creativecommons.org#N4',
+        '[2606:4700:310c::ac42:2c39]#N5 √IPv6',
       ];
         ```
 
@@ -91,13 +93,13 @@ This is a script based on the Cloudflare Worker platform. Based on the original 
    - Add variables `ADD` Local static preferred line, if there is no port number, the default TLS port is 443, and the # number is followed by a remark alias, for example:
      ```js
      discord.com#You can just put the domain name as follows
-     www.speedtest.net:443#Ni1
-     speed.cloudflare.com#Ni2
-     zula.ir#Ni3
-     creativecommons.org:2053#Ni4
-     sky.rethinkdns.com#NI5
+     www.speedtest.net:443#N1
+     speed.cloudflare.com#N2
+     zula.ir#N3
+     creativecommons.org:2053#N4
+     sky.rethinkdns.com#N5
      104.17.152.41#IPv4 is available
-     [2606:4700:e7:25:4b9:f8f8:9bfb:774a]#also IPv6
+     [2606:4700:310c::ac42:2c39]#also IPv6
      ```
 
 3. Access subscription content:
@@ -123,7 +125,7 @@ This is a script based on the Cloudflare Worker platform. Based on the original 
 
 ### How to find proxyIP 
 
-[(SOURCE)](https://github.com/NiREvil/vless/edit/main/sub/ProxyIP.md)
+[Let see here](https://github.com/NiREvil/vless/edit/main/sub/ProxyIP.md)
 
 
 
@@ -137,10 +139,10 @@ This is a script based on the Cloudflare Worker platform. Based on the original 
 | variable name | Example                                                                                                            | Remark                                                                                                                        |
 | ------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------|
 | PASSWORD      | auto                                                                                                               | Can take any value                                                                                                            |
-| PROXYIP       | [click here](https://github.com/NiREvil/vless/edit/main/sub/ProxyIP.md) or Use `ni.radically.pro`                  | Alternative proxy node for accessing CFCDN sites (supports multiple ProxyIPs, with ,1 or 2 line breaks between ProxyIPs))     |
-| ADD           | [zula.ir,www.csgo.com:2087](http://zula.ir,www.csgo.com:2087)                                                      | Local preferred domain name/preferred IP (supports multiple elements`,`or line feed as interval)                              |
+| PROXYIP       |  `bpb.radically.pro` or Use anything else you want [see here](https://github.com/NiREvil/vless/edit/main/sub/ProxyIP.md)                 | Alternative proxy node for accessing CFCDN sites (supports multiple ProxyIPs, with ,1 or 2 line breaks between ProxyIPs))     |
+| ADD           | [zula.ir,www.wto.org:2087](http://zula.ir,www.csgo.com:2087)                                                      | Local preferred domain name/preferred IP (supports multiple elements`,`or line feed as interval)                              |
 | ADDAPI        | https://raw.githubusercontent.com/NiREvil/Trauma/main/cleanIPs.txt                                                 | No need to explain, everyone understands                                                                                      |
-|SUBAPI         | subapi.fxxk.dedyn.io                                                                                               | clash, singbox, etc. subscription conversion backend                                                                          |
+|SUBAPI         | SUBAPI.fxxk.dedyn.io                                                                                               | clash, singbox, etc. subscription conversion backend                                                                          |
 | SUBNAME       | REvil                                                                                                              | Subscription name                                                                                                             |
 | ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)  |    ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)   |                                             ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)   |
 
@@ -153,14 +155,10 @@ https://github.com/NiREvil/Trauma/assets/126243832/92a430c3-4884-4831-bf8c-e328c
 
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
 
-
-
   
 https://github.com/NiREvil/Trauma/assets/126243832/f20a0215-bd75-4302-89dd-90a5bdd75cbc
 
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)  
-
-
 
 
 
@@ -170,14 +168,9 @@ https://github.com/NiREvil/Trauma/assets/126243832/f63c74c9-0e86-40a2-8894-e027c
 
 
   
-
-
 https://github.com/NiREvil/Trauma/assets/126243832/61ce0b14-2c26-4325-a6c0-6f12cfc608d7
 
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)  
-
-
-
 
 
 # grateful
