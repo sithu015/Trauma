@@ -6,18 +6,16 @@ let password = 'auto';
 let proxyIP = ['bpb.radically.pro'];
 
 let addresses = [
-	// everything you want, When sub is empty, the local preferred domain name/preferred IP is enabled. If the port number is not provided, the default TLS port is 443, and the alias after the # sign is a remark
-	'zula.ir:443#Trauma-√1',
-	'icook.hk:2083#Trauma-√2',
-	'vista.com:2053#Trauma-√3',
-	'www.wto.org:8443#Trauma-√4',
-	'go.inmobi.com:2053#Trauma-√5',
-	'www.speedtest.net:443#Trauma-√6',
-	'sky.rethinkdns.com:2053#Trauma-√7',
-	'creativecommons.org:443#Trauma-√8',
-	'time.cloudflare.com:2053#Trauma-√9',
-	'[2a06:98c1:3120::3]#Trauma-V6-√10',
-	'[2a06:98c1:3121::3]#Trauma-V6-√11',
+    	// everything you want, When sub is empty, the local preferred domain name/preferred IP is enabled. If the port number is not provided, the default TLS port is 443, and the alias after the # sign is a remark
+    	'zula.ir:443#★TRAUMA¹',
+    	'fbi.gov:8443#★TRAUMA²',
+    	'icook.hk:2053#★TRAUMA³',
+    	'cdnjs.com:2083#★TRAUMA⁴',
+    	'www.wto.org:2087#★TRAUMA⁵',
+    	'go.inmobi.com:2096#★TRAUMA⁶',
+    	'www.speedtest.net:443#★TRAUMA⁷',
+    	'sky.rethinkdns.com:8443#★TRAUMA⁸',
+    	'creativecommons.org:2053#★TRAUMA⁹',
 ];
 
 let sub = '';
@@ -25,7 +23,7 @@ let subconverter = 'SUBAPI.fxxk.dedyn.io';// Clash subscription conversion backe
 let subconfig = "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Mini.ini";// Subscription Profile
 let RproxyIP = 'false';
 
-let addressesapi = [];// you can use any addresses api's like this ['https://raw.githubusercontent.com/NiREvil/Trauma/main/cleanIPs.txt'];
+let addressesapi = [];// you can use any addresses api's like this "https://raw.githubusercontent.com/NiREvil/Trauma/main/cleanIPs.txt";
 let addressescsv = [];
 let DLS = 8;
 
@@ -38,7 +36,7 @@ const _0xa12f2=_0x1bef;(function(_0x235f1e,_0x46d764){const _0x4b7227=_0x1bef,_0
  * [js-sha256]{@link https://github.com/emn178/js-sha256}
  *
  * @version 0.12.0
- * Last Update: 17:27 - Thursday, 1 August 2024 by NiREvil
+ * Last Update: 17:27 - Tuesday, 5 November 2024, @Diana-Cl
  *
  * @license MIT
  */
