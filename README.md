@@ -1,12 +1,9 @@
 # Deploy Trojan using a Serverless CF-Workers & Pages
 
-
 🇮🇷 [Persian](README.fa.md)  
 🇹🇷 [Turkish](README.tr.md)  
 🇬🇧 [English](README.md)  
 🇩🇪 [Germany](README.de.md)  
-
-
 
 
 This is a script based on the Cloudflare Worker platform. Based on the original version, it is modified to display Trojan configuration information and convert it into subscription content. Using this script, you can easily convert Trojan configuration information to tools such as Clash or Singbox using online configuration.  
@@ -139,8 +136,8 @@ This is a script based on the Cloudflare Worker platform. Based on the original 
 | variable name | Example                                                                                                            | Remark                                                                                                                        |
 | ------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------|
 | PASSWORD      | auto                                                                                                               | Can take any value                                                                                                            |
-| PROXYIP       |  `bpb.radically.pro` or Use anything else you want [see here](https://github.com/NiREvil/vless/edit/main/sub/ProxyIP.md)                 | Alternative proxy node for accessing CFCDN sites (supports multiple ProxyIPs, with ,1 or 2 line breaks between ProxyIPs))     |
-| ADD           | [zula.ir,www.wto.org:2087](http://zula.ir,www.csgo.com:2087)                                                      | Local preferred domain name/preferred IP (supports multiple elements`,`or line feed as interval)                              |
+| PROXYIP       |  `bpb.radically.pro` or anything else you want [see here](https://github.com/NiREvil/vless/edit/main/sub/ProxyIP.md)                 | Alternative proxy node for accessing CFCDN sites (supports multiple ProxyIPs, with ,1 or 2 line breaks between ProxyIPs))     |
+| ADD           | `zula.ir,www.wto.org:2053`                                                   | Local preferred domain name/preferred IP (supports multiple elements`,`or line feed as interval)                              |
 | ADDAPI        | https://raw.githubusercontent.com/NiREvil/Trauma/main/cleanIPs.txt                                                 | No need to explain, everyone understands                                                                                      |
 |SUBAPI         | SUBAPI.fxxk.dedyn.io                                                                                               | clash, singbox, etc. subscription conversion backend                                                                          |
 | SUBNAME       | REvil                                                                                                              | Subscription name                                                                                                             |
