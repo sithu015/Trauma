@@ -1,4 +1,4 @@
-# Stellen Sie einen Trojaner mit einem serverlosen CF-Workers & Pages bereit
+# Deploy Trojan using a Serverless CF-Workers & Pages
 
 🇮🇷[persisch](README.fa.md)| 🇹🇷[Türkisch](README.tr.md)
 
@@ -98,7 +98,7 @@ Dies ist ein Skript, das auf der Cloudflare Worker-Plattform basiert. Basierend 
         ```
 
 3.  Zugriff auf Abonnementinhalte:
-    -   Zugang`https://[YOUR-PAGES-URL]/[password]`Abonnementinhalte sind verfügbar.
+    -   access `https://[YOUR-PAGES-URL]/[password]`Abonnementinhalte sind verfügbar.
     -   Zum Beispiel`https://trauma.pages.dev/auto`Dies ist Ihre universelle adaptive Abonnementadresse.
     -   Zum Beispiel`https://trauma.pages.dev/auto?sub`Base64-Abonnementformat, geeignet für PassWall, SSR+ usw.
     -   Zum Beispiel`https://trauma.pages.dev/auto?clash`Clash-Abonnementformat, geeignet für OpenClash usw.
@@ -124,7 +124,8 @@ Dies ist ein Skript, das auf der Cloudflare Worker-Plattform basiert. Basierend 
 
 ## Beschreibung der Umgebungsvariablen
 
-> [!NOTIZ]Es reicht aus, nur zwei davon festzulegen, die erste Variable`PASSWORD`und der zweite`PROXYIP`Die in der folgenden Tabelle aufgeführten Variablen dienen nur zu Bildungszwecken und zusätzlichen Erläuterungen.![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
+> [!NOTIZ]
+> Only set two of them is sufficient, the first variable `PASSWORD`und der zweite`PROXYIP`Die in der folgenden Tabelle aufgeführten Variablen dienen nur zu Bildungszwecken und zusätzlichen Erläuterungen.![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
 
 | Variablenname                                                                                      | Beispiel                                                                                                       | Bemerkung                                                                                                                                |
 | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -132,7 +133,7 @@ Dies ist ein Skript, das auf der Cloudflare Worker-Plattform basiert. Basierend 
 | PROXYIP                                                                                            | [klicken Sie hier](https://github.com/NiREvil/vless/edit/main/sub/ProxyIP.md)oder Verwendung`ni.radically.pro` | Alternativer Proxy-Knoten für den Zugriff auf CFCDN-Sites (unterstützt mehrere ProxyIPs mit 1 oder 2 Zeilenumbrüchen zwischen ProxyIPs)) |
 | HINZUFÜGEN                                                                                         | [zula.ir,www.csgo.com:2087](http://zula.ir,www.csgo.com:2087)                                                  | Lokaler bevorzugter Domänenname/bevorzugte IP (unterstützt mehrere Elemente`,`oder Zeilenvorschub als Intervall)                         |
 | HINZUFÜGEN                                                                                         | <https://raw.githubusercontent.com/NiREvil/Trauma/main/cleanIPs.txt>                                           | Kein Grund zur Erklärung, jeder versteht es                                                                                              |
-| SUBAPI                                                                                             | subapi.fxxk.dedyn.io                                                                                           | Clash, Singbox usw. Abonnementkonvertierungs-Backend                                                                                     |
+| subapi                                                                                             | subapi.fxxk.dedyn.io                                                                                           | Clash, Singbox usw. Abonnementkonvertierungs-Backend                                                                                     |
 | UNTERNAME                                                                                          | REvil                                                                                                          | Abonnementname                                                                                                                           |
 | ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256) | ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)             | ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)                                       |
 
@@ -158,6 +159,6 @@ Dies ist ein Skript, das auf der Cloudflare Worker-Plattform basiert. Basierend 
 
 # dankbar
 
-[ca110us](https://github.com/ca110us/epeius)\|[Sterilisieren Sie es](https://github.com/3Kmfi6HP/EDtunnel/tree/trojan)\|[zizifn](https://github.com/zizifn/edgetunnel)\|[Jemen 178](https://github.com/emn178/js-sha256)\|[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)\|[Shegs1999](https://github.com/SHIJS1999/cloudflare-worker-vless-ip)
+[ca110us](https://github.com/ca110us/epeius)\|[Sterilisieren Sie es](https://github.com/3Kmfi6HP/EDtunnel/tree/trojan)\|[zizifn](https://github.com/zizifn/edgetunnel)\|[Jemen 178](https://github.com/emn178/js-sha256)\|[ACL4SSR](https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash/config)\|[Shegs 1999](https://github.com/SHIJS1999/cloudflare-worker-vless-ip)
 
 ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
