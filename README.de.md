@@ -46,7 +46,7 @@ Dies ist ein Skript, das auf der CloudFlare Worker -Plattform basiert. Basierend
 
     -   Wille[Worker.js](_worker.js)Fügen Sie den Inhalt in den Worker -Editor ein.
 
-    -   Zeile ändern 3`password`Ändern Sie es in Ihren eigenen**password**
+    -   Zeile ändern 3`password`Ändern Sie es in Ihren eigenen**Passwort**
 
     -   Alternativ können Sie auf die Schaltfläche unten klicken, um sie direkt bereitzustellen.
 
@@ -108,7 +108,7 @@ Dies ist ein Skript, das auf der CloudFlare Worker -Plattform basiert. Basierend
 
 4.  Binden Sie die CNAME -benutzerdefinierte Domäne an Seiten:
     -   In der Seitenkonsole`Custom domains`Registerkarte, klicken Sie unten`Set up a custom domain`.
-    -   Geben Sie Ihren benutzerdefinierten Sekundärdomainnamen ein. Achten Sie darauf, dass Sie Ihren Root -Domänennamen nicht verwenden, z. B.:
+    -   Füllen Sie Ihren benutzerdefinierten Sekundärdomainnamen ein. Achten Sie darauf, dass Sie Ihren Root -Domänennamen nicht verwenden, zum Beispiel:
     -   Der von Ihnen zugewiesene Domain -Name ist`fuck.cloudns.biz`Fügen Sie dann ein benutzerdefiniertes Feld hinzu, um auszufüllen`iran.fuck.cloudns.biz`Das war's;
     -   Nach Anforderungen von CloudFlare wird Ihr Domain -Name DNS -Dienstanbieter zurückgegeben und die benutzerdefinierte Domain hinzugefügt.`trauma`Cname -Aufzeichnung von`trauma.pages.dev`Danach klicken Sie`Activate Domain`Das war's.
 
@@ -134,7 +134,7 @@ Dies ist ein Skript, das auf der CloudFlare Worker -Plattform basiert. Basierend
 | Proxyip                                                                                            | `bpb.radically.pro`oder alles andere, was Sie wollen[Siehe hier](https://github.com/NiREvil/vless/edit/main/sub/ProxyIP.md) | Alternativer Proxyknoten zum Zugriff auf CFCDN -Websites (unterstützt mehrere Proxyips mit 1 oder 2 Zeilenumbrüten zwischen Proxyips))) |
 | HINZUFÜGEN                                                                                         | `zula.ir,www.wto.org:2053`                                                                                                  | Lokale bevorzugte Domänenname/bevorzugte IP (unterstützt mehrere Elemente`,`oder Linieneinspeise als Intervall)                         |
 | Fügt hinzu                                                                                         | <https://raw.githubusercontent.com/NiREvil/Trauma/main/cleanIPs.txt>                                                        | Keine Notwendigkeit zu erklären, jeder versteht                                                                                         |
-| Nachfolgend                                                                                        | SUBAPI.fxxk.dedyn.io                                                                                                        | Clash, Singbox usw. Abonnement Conversion Backend                                                                                       |
+| SUBAPI                                                                                             | SUBAPI.fxxk.dedyn.io                                                                                                        | Clash, Singbox usw. Abonnement Conversion Backend                                                                                       |
 | Subname                                                                                            | Revil                                                                                                                       | Abonnementname                                                                                                                          |
 | ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256) | ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)                          | ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)                                      |
 
