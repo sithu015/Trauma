@@ -15,10 +15,10 @@ jobs:
         with:
           node-version: 12.x
       # ISO Langusge Codes: https://cloud.google.com/translate/docs/languages  
-      - name: Adding README - Turkish
+      - name: Adding README - Myanmar (မြန်မာ)
         uses: dephraiim/translate-readme@main
         with:
-          LANG: tr
+          LANG: my
       - name: Adding README - Germany
         uses: dephraiim/translate-readme@main
         with:
