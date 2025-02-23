@@ -1,11 +1,11 @@
-# sacerless Cf-Works & Pages ကို အသုံးပြု. Trojan ကိုဖြန့်ဖြူးပါ
+# CF-Workers & Pages ကိုသုံး၍ Trojan ကို ဆာဗာမဲ့ လွှင့်တင်ပါ။
 
-🇮🇷[ပါရှန်းပစ္စည်းများ](README.fa.md)  
-🇹🇷[တာယာတူ](README.tr.md)  
+🇮🇷[ပြင်သစ်](README.fa.md)  
+🇹🇷[တူရကီ](README.tr.md)  
 🇬🇧[အင်္ဂလိပ်](README.md)  
 🇩🇪[ဂျာမနီ](README.de.md)
 
-၎င်းသည် cloudflare အလုပ်သမားပလက်ဖောင်းပေါ်တွင်အခြေခံသည်။ မူရင်းဗားရှင်းအပေါ် အခြေခံ. ၎င်းကို Trojan Configuration Information ကိုပြသရန်နှင့် subscription content အဖြစ်ပြောင်းလဲရန်ပြင်ဆင်ထားသည်။ ဤ script ကို အသုံးပြု. Trojan Configuration Information ကိုအွန်လိုင်း configuration သုံး. Singbox ကဲ့သို့သောကိရိယာများသို့အလွယ်တကူပြောင်းလဲနိုင်သည်။
+၎င်းသည် cloudflare Workers ပလက်ဖောင်း ပေါ်တွင်အခြေခံသည်။ မူရင်းဗားရှင်းကို အခြေခံ၍ Trojan စီစဉ်ဖွဲ့စည်းမှု အချက်အလက်များကို ပြသရန် ပြုပြင်ထားပြီး စာရင်းသွင်း ခြင်း လုပ်ဆောင်ချက် အဖြစ် ပြောင်းလဲပေးသည်။ ဤ script ကို အသုံးပြု ကာ အွန်လိုင်း စီစဉ်ဖွဲ့စည်းမှုဖြင့် Clash (သို့) Singbox ကဲ့သို့သော ကိရိယာများသို့ Trojan စီစဉ်ဖွဲ့စည်းမှု အချက်အလက်များကို အလွယ်တကူ ပြောင်းလဲနိုင်ပါသည်။
 
 [tg channel](https://t.me/F_NiREvil)
 
@@ -13,47 +13,47 @@
 
 ## မာတိကာ
 
--   [အလုပ်သမားများဖြန့်ကျက်နည်းလမ်း](#Workers-deployment-method)
--   [စာမျက်နှာများဖြန့်ကျက်နည်းလမ်း](#Pages-deployment-method)
--   [proxyip](#proxyIP)
--   [ပတ်ဝန်းကျင် variable ကိုဖော်ပြချက်](#Environment-variables-description)
--   [ဗွီဒီယိုသင်ခန်းစာများ](#Video-tutorials)![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
+-   [worker ဖြင့် လွှင့်တင်ခြင်း နည်းလမ်း](#Workers-deployment-method)
+-   [Pages ဖြင့် လွှင့်တင်ခြင်း နည်းလမ်း](#Pages-deployment-method)
+-   [ပရိုစီအိုင်ပီ](#proxyIP)
+-   [ဝန်းကျင် ဆိုင်ရာ ကိန်းရှင် (Enviroment Variable) ဆိုင်ရာ အညွှန်း](#Environment-variables-description)
+-   [ဗွီဒီယို သင်ခန်းစာများ](#Video-tutorials)![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)
 
 <details>
-<summary> Use </summary>
+<summary> အသုံးပြုပါ </summary>
 
--   ဤစီမံကိန်းကိုသင်ယူခြင်း, သုတေသနနှင့်ဘေးကင်းလုံခြုံရေးစစ်ဆေးခြင်းအတွက်ဒီဇိုင်းပြုလုပ်ထားသည်။ ၎င်းသည်လုံခြုံရေးသုတေသီများ, ပညာရှင်များနှင့်နည်းပညာစိတ်အားထက်သန်မှုများကိုကွန်ယက်ဆက်သွယ်ရေးနည်းပညာကိုနားလည်ရန်နှင့်လေ့ကျင့်ရန်ကိရိယာတစ်ခုပါ 0 င်ရန်ရည်ရွယ်သည်။
+-   ဤစီမံကိန်းကို သင်ယူခြင်း, သုတေသန နှင့် ဘေးကင်းလုံခြုံရေး စစ်ဆေးခြင်း အတွက် သာ ဒီဇိုင်း ပြုလုပ် ထားပါသည်။ ၎င်းသည် လုံခြုံရေး သုတေသီများ, ပညာရှင်များ နှင့် နည်းပညာ စိတ်အားထက်သန်မှုများ ကို ကွန်ယက်ဆက်သွယ်ရေး နည်းပညာကို နားလည်ရန် နှင့် လေ့ကျင့်ရန် ကိရိယာ တစ်ခုအဖြစ်သာ သုံးစွဲရန် ရည်ရွယ်သည်။
     </details>
 
 <details>
-<summary> Legality </summary>
+<summary> တရားဝင် ပါစေ </summary>
   
-  - Users must comply with local laws and regulations when downloading and using this project.
-  - Users are responsible for ensuring that their actions comply with the laws, regulations and other applicable requirements of their region
+  - အသုံးပြု သူ များ သည် ဤ စီမံကိန်း ကို ကူးယူ ပြီး အသုံးပြု သောအခါ ဒေသခံ ဥပဒေ များ နှင့် စည်းမျဉ်း များ ကို လိုက်နာ ရ မည် ။
+  - အသုံးပြု သူ များ သည် သူ တို့ ၏ လုပ်ရပ် များ ကို ယင်းတို့ နှင့် ဆိုင်ရာ နိုင်ငံ၊ ဒေသ ၏ ဥပဒေ ၊ စည်းမျဉ်း များ နှင့် အခြား သော ပြဒါန်းထားသည့် လိုပ်အပ်ချက်များ ကို တိကျစွာ လိုက်နာရန် တာဝန် ရှိသည်။
 
 </details>
 
 <details>
-<summary> Risk warning </summary>
-  - Avoid leaking node configuration information by submitting false node configurations to the subscription service 
+<summary> ⚠️ အန္တရာယ် သတိပေးချက် </summary>
+  - ကွန်ယက် Node ဖွဲ့စည်းမှု အချက်အလက်များ ပေါက်ကြားခြင်းမှ ကာကွယ်နိုင်စေရန် မယုံကြည်ရသေ အတုအယောင် Node ဖွဲစည်းမှု ပြင်ဆင်ပြောင်လဲ ဝန်ဆောင်သူများ ထံသို့ ဖွဲ့စည်မှု့ အချက်အလက်များ ပေးပို့ ပြင်ဆင်ခြင်း ကိုရှောင်ရှားပါ။
 </details>
 
-## အလုပ်သမားများဖြန့်ကျက်နည်းလမ်း
+## worker ဖြင့် လွှင့်တင်ခြင်း နည်းလမ်း
 
-1.  Cloudflare Worker ကိုဖြန့်ကျက်ပါ။
+1.  Cloudflare Worker ဖြင့် လွီင့်တင်ရန်
 
-    -   cloudflare လုပ်သား console တွင်အလုပ်သမားအသစ်တစ်ခုကိုဖန်တီးပါ။
+    -   cloudflare worker console တွင် အလုပ်သမား အသစ် တစ်ခုကို ဖန်တီးပါ။
 
-    -   သေတမ်းစာ[အလုပ်သမား .JJs](_worker.js)ပါ 0 င်သောအရာများကိုအလုပ်သမားအယ်ဒီတာသို့ကူးထည့်ပါ။
+    -   ပြီးလျှင် [worker.js](_worker.js) ရှိ အချက်အလက်များကို worker အယ်ဒီတာ သို့ ကူးထည့်ပါ။
 
-    -   လိုင်း 3 ကိုပြောင်းပါ`password`သင့်ကိုယ်ပိုင်ကိုပြုပြင်မွမ်းမံပါ**လှျို့ဝှက်စကား**
+    -   လိုင်းနာပတ် 3 ရှိ `password` ကို သင့်ကိုယ်ပိုင် **စကားဝှက်** ဖြင့် ပြောင်းပါ။
 
-    -   တနည်းအားဖြင့်, သင်တိုက်ရိုက်ဖြန့်ကျက်ရန်အောက်ပါခလုတ်ကိုနှိပ်ပါ။
+    -    နောက်ထပ် နည်းလမ်း မှာ , သင်တိုက်ရိုက် လွှင့်တင် ရန်အောက်ပါခလုတ်ကိုနှိပ်ပါ။
 
     [![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/NiREvil/Trauma)
 
-2.  ဦး စားပေးလမ်းကြောင်းကိုထည့်ပါ။
-    -   ပေး`addresses`format နဲ့အညီ ဦး စားစက်နာမည် / ပိုနှစ်သက်သော IP ထည့်ပါ။ Port နံပါတ်မရှိပါကပုံမှန် TLS port သည် 443 ဖြစ်ပြီး # နိမိတ်လက်ခဏာမှာ alias ကိုမှတ်ချက်ပေးသည်။
+2.  နှစ်သက်ရာ ဦးစားပေး ကွန်ယက် လမ်းကြောင်းကို ထည့်ပါ။
+    -   အောက်ဖော်ပြပါ `addresses` ဖောမတ် နဲ့အညီ နှစ်သက်ရာ ဒိုမိန်း / သန့်ရှင်းသော IP (အဘန်းမခံထားရသော) ထည့်ပါ။ Port နံပါတ်မရှိပါက ပုံမှန် TLS port သည် 443 ဖြစ်ပြီး # သင်္ကေတက နောက်တွင် alias ကို မှတ်ချက် အနေဖြင့်ပေးနိင်သည်။
         ```js
         let addresses = [
         // any Domain or clean IPv4/IPv6 addresses from cloudflare is usable, no sweat.
