@@ -3,7 +3,8 @@
 🇮🇷[ပါရှန်းပစ္စည်းများ](README.fa.md)  
 🇹🇷[တာယာတူ](README.tr.md)  
 🇬🇧[အင်္ဂလိပ်](README.md)  
-🇩🇪[ဂျာမနီ](README.de.md)
+🇩🇪[ဂျာမနီ](README.de.md)  
+🇲🇲[မြန်မာ](README.my.md)
 
 ၎င်းသည် cloudflare အလုပ်သမားပလက်ဖောင်းပေါ်တွင်အခြေခံသည်။ မူရင်းဗားရှင်းအပေါ် အခြေခံ. ၎င်းကို Trojan Configuration Information ကိုပြသရန်နှင့် subscription content အဖြစ်ပြောင်းလဲရန်ပြင်ဆင်ထားသည်။ ဤ script ကို အသုံးပြု. Trojan Configuration Information ကိုအွန်လိုင်း configuration သုံး. Singbox ကဲ့သို့သောကိရိယာများသို့အလွယ်တကူပြောင်းလဲနိုင်သည်။
 
@@ -44,7 +45,7 @@
 
     -   cloudflare လုပ်သား console တွင်အလုပ်သမားအသစ်တစ်ခုကိုဖန်တီးပါ။
 
-    -   သေတမ်းစာ[အလုပ်သမား .JJS](_worker.js)ပါ 0 င်သောအရာများကိုအလုပ်သမားအယ်ဒီတာသို့ကူးထည့်ပါ။
+    -   သေတမ်းစာ[အလုပ်သမား .JJs](_worker.js)ပါ 0 င်သောအရာများကိုအလုပ်သမားအယ်ဒီတာသို့ကူးထည့်ပါ။
 
     -   လိုင်း 3 ကိုပြောင်းပါ`password`သင့်ကိုယ်ပိုင်ကိုပြုပြင်မွမ်းမံပါ**လှျို့ဝှက်စကား**
 
@@ -82,7 +83,7 @@
 
 1.  cloudflare စာမျက်နှာများဖြည်ချခြင်း:
     -   ခက်ရင်း[GitHub ရှိဤစီမံကိန်း](https://github.com/NiREvil/Trauma/fork)
-    -   cloudflare စာမျက်နှာများ console တွင်ရွေးချယ်ပါ`Connected to Git`ထို့နောက်ရွေးပါ`trauma`item ပြီးနောက်ကိုကလစ်နှိပ်ပါ`Start setting up`。
+    -   cloudflare စာမျက်နှာများ console တွင်ရွေးချယ်ပါ`Connected to Git`ထို့နောက်ရွေးချယ်ပါ`trauma`item ပြီးနောက်ကိုကလစ်နှိပ်ပါ`Start setting up`。
     -   တည်နေ`Setting up build and deployment`စာမျက်နှာ၏အောက်ခြေတွင် Select လုပ်ပါ`Environment variables (advanced)`နောက်ပိုင်းတွင်ပေါင်းစည်း[variable တွေကိုထည့်ပါ](#Environment-variables-description),
     -   variable ကို name ကိုဖြည့်ပါ**လှျို့ဝှက်စကား**တန်ဖိုးသည်သင်၏စကားဝှက်ဖြစ်သည်, ပြီးနောက်ကိုနှိပ်ပါ`Save and deploy`ဒါပဲ။
 
@@ -118,7 +119,7 @@
 
 1.  cloudflare စာမျက်နှာများတွင်ဖြန့်ချိသောအခါ, သင် proxyip ကို 4 ကြိမ်မြောက်လိုင်းတွင်သတ်မှတ်နိုင်သည်`_worker.js`ဖိုင်။ သို့မဟုတ်ပတ်ဝန်းကျင် variable ကို set ကို set, variable ကိုအမည်ဖြစ်ပါတယ်`PROXYIP`
 
-2.  Workers.dev တွင်တပ်ဆင်သောအခါသင် proxyip ကို 4 ကြိမ်မြောက်လိုင်းတွင်သတ်မှတ်နိုင်သည်`_worker.js`ဖိုင်။ သို့မဟုတ်ပတ်ဝန်းကျင် variable ကို set ကို set, variable ကိုအမည်ဖြစ်ပါတယ်`proxyIP`
+2.  When deploy in worker.dev, you can set proxyIP in 4th line of `_worker.js`ဖိုင်။ သို့မဟုတ်ပတ်ဝန်းကျင် variable ကို set ကို set, variable ကိုအမည်ဖြစ်ပါတယ်`proxyIP`
 
 ### Proxyip ကိုဘယ်လိုရှာရမလဲ
 
