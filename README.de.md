@@ -3,7 +3,8 @@
 🇮🇷[persisch](README.fa.md)  
 🇹🇷[Türkisch](README.tr.md)  
 🇬🇧[Englisch](README.md)  
-🇩🇪[Deutschland](README.de.md)
+🇩🇪[Deutschland](README.de.md)  
+🇲🇲[Myanmar](README.my.md)
 
 Dies ist ein Skript, das auf der CloudFlare Worker -Plattform basiert. Basierend auf der Originalversion wird es so geändert, dass die Trojan -Konfigurationsinformationen angezeigt und in Abonnementinhalte umwandelt werden. Mit diesem Skript können Sie die Trojan -Konfigurationsinformationen einfach in Tools wie Clash oder Singbox mithilfe der Online -Konfiguration konvertieren.
 
@@ -108,7 +109,7 @@ Dies ist ein Skript, das auf der CloudFlare Worker -Plattform basiert. Basierend
 
 4.  Binden Sie die CNAME -benutzerdefinierte Domäne an Seiten:
     -   In der Seitenkonsole`Custom domains`Registerkarte, klicken Sie unten`Set up a custom domain`.
-    -   Füllen Sie Ihren benutzerdefinierten Sekundärdomainnamen ein. Achten Sie darauf, dass Sie Ihren Root -Domänennamen nicht verwenden, zum Beispiel:
+    -   Geben Sie Ihren benutzerdefinierten Sekundärdomainnamen ein. Achten Sie darauf, dass Sie Ihren Root -Domänennamen nicht verwenden, z. B.:
     -   Der von Ihnen zugewiesene Domain -Name ist`fuck.cloudns.biz`Fügen Sie dann ein benutzerdefiniertes Feld hinzu, um auszufüllen`iran.fuck.cloudns.biz`Das war's;
     -   Nach Anforderungen von CloudFlare wird Ihr Domain -Name DNS -Dienstanbieter zurückgegeben und die benutzerdefinierte Domain hinzugefügt.`trauma`Cname -Aufzeichnung von`trauma.pages.dev`Danach klicken Sie`Activate Domain`Das war's.
 
@@ -118,7 +119,7 @@ Dies ist ein Skript, das auf der CloudFlare Worker -Plattform basiert. Basierend
 
 1.  Wenn Sie auf Cloudflare -Seiten bereitgestellt werden, können Sie Proxyip in der 4. Zeile von festlegen`_worker.js`Datei. oder setzen Sie die Umgebungsvariable, variabler Name ist`PROXYIP`
 
-2.  Wenn Sie in Worker.dev bereitgestellt werden, können Sie Proxyip in der 4. Zeile von festlegen`_worker.js`Datei. oder setzen Sie die Umgebungsvariable, variabler Name ist`proxyIP`
+2.  When deploy in worker.dev, you can set proxyIP in 4th line of `_worker.js`Datei. oder setzen Sie die Umgebungsvariable, variabler Name ist`proxyIP`
 
 ### So finden Sie Proxyip
 
@@ -134,7 +135,7 @@ Dies ist ein Skript, das auf der CloudFlare Worker -Plattform basiert. Basierend
 | Proxyip                                                                                            | `bpb.radically.pro`oder alles andere, was Sie wollen[Siehe hier](https://github.com/NiREvil/vless/edit/main/sub/ProxyIP.md) | Alternativer Proxyknoten zum Zugriff auf CFCDN -Websites (unterstützt mehrere Proxyips mit 1 oder 2 Zeilenumbrüten zwischen Proxyips))) |
 | HINZUFÜGEN                                                                                         | `zula.ir,www.wto.org:2053`                                                                                                  | Lokale bevorzugte Domänenname/bevorzugte IP (unterstützt mehrere Elemente`,`oder Linieneinspeise als Intervall)                         |
 | Fügt hinzu                                                                                         | <https://raw.githubusercontent.com/NiREvil/Trauma/main/cleanIPs.txt>                                                        | Keine Notwendigkeit zu erklären, jeder versteht                                                                                         |
-| SUBAPI                                                                                             | SUBAPI.fxxk.dedyn.io                                                                                                        | Clash, Singbox usw. Abonnement Conversion Backend                                                                                       |
+| Nachfolgend                                                                                        | SUBAPI.fxxk.dedyn.io                                                                                                        | Clash, Singbox usw. Abonnement Conversion Backend                                                                                       |
 | Subname                                                                                            | Revil                                                                                                                       | Abonnementname                                                                                                                          |
 | ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256) | ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)                          | ![rainbow](https://github.com/NiREvil/vless/assets/126243832/1aca7f5d-6495-44b7-aced-072bae52f256)                                      |
 
