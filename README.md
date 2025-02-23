@@ -4,6 +4,7 @@
 🇹🇷 [Turkish](README.tr.md)  
 🇬🇧 [English](README.md)  
 🇩🇪 [Germany](README.de.md)  
+🇲🇲 [Myanmar](README.my.md) 
 
 
 This is a script based on the Cloudflare Worker platform. Based on the original version, it is modified to display Trojan configuration information and convert it into subscription content. Using this script, you can easily convert Trojan configuration information to tools such as Clash or Singbox using online configuration.  
